@@ -42,11 +42,17 @@ failure the above download instructions should work.
 HOW TO USE
 
 from dportscanner.scan import PortScanner
+
 app = PortScanner('https://google.com')
+
 ip = app.scan()  #returns a dict with keys : status,protocols,ports
+
 print(ip['status'])
+
 print(ip['protocols'])
+
 PORT = ip['ports']
+
 print(PORT[0])
 
 HOW TO DOWNLOAD
